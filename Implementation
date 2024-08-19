@@ -1,0 +1,39 @@
+Implementation : 
+This implementation demonstrates a console-based application designed to aid farmers in crop selection, management of the soil, and disease identification based on the inputs given by the farmers. It provides recommendations and information based on the details inputted by the user concerning the type of soil used, the climate, the crops, and the symptoms. Here is a brief description of how it works:
+
+1. Initialization:
+The program starts with a welcome message to the Crop and Soil Management System.
+
+2. Soil and Climate Inputs:
+Soil Type: This will prompt the user to enter his or her soil type. The user can type 'help' to give a list of valid soil types.
+Climate Type: This asks the user to enter his or her climatic region with an identical help option that reveals the valid climate types.
+
+3. Crop Selection:
+It recommends crops for appropriate soils and climate as provided by the user. This program cross-references these conditions with a dataset containing crops that match the criteria.
+
+4. Soil Analysis:
+The application gives an analysis of the soil, based on the user's input. The details include the pH level, nutrient content, and drainage capabilities of the given soil type.
+
+5. Disease Identification:
+Crop Input: The user inputs a list of crops they would like to diagnose for disease. They may also enter help to display a list of available crops.
+Symptoms Input: The user inputs symptoms they observe. They may enter help to display the list of known symptoms.
+Disease Matching: The software will then match the symptoms with known diseases for the indicated crops and give information on possible diseases and control measures.
+
+6. Continue and Reset:
+Once the diseases have been identified for some crops, the user is given the opportunity to check other crops or even start afresh by taking different soil and climate inputs.
+This makes it possible to run various scenarios without making the user start the program all over again.
+
+7. User Friendly Features:
+Help Feature: In the event that the user types 'help', the program will respond with some suggestions of valid inputs. This ensures that the user can easily identify correct options.
+Case Insensitivity: This makes the input case-insensitive, thus more user-friendly.
+
+8. Loop Structure:
+The main loop allows the user to keep checking different crops or start again with different conditions as many times as they wish until they wish to exit the program.
+
+Explanation of the Code:
+display_options(options): This function prints the list of options available for the user's input.
+get_normalized_input(prompt, valid_options, display_help=True): This function queries the user for input. If the user wishes to see the help options, it displays them and finally validates the input.
+get_symptoms_input(prompt, valid_options): Similar to get_normalized_input, but specifically used for the symptoms.
+select_crop(soil_type, climate): Recommends crops according to the soil type and climate.
+analyze_soil(soil_type): It gives an analysis of the given soil type.
+identify_disease(crops, symptoms): Identifies possible diseases with regard to crops and symptoms.
