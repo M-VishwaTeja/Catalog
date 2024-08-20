@@ -1,0 +1,14 @@
+Features :
+Blockchain Initialization: The blockchain initialization is done through a Genesis block, which is the very first block in the chain.
+Adding Transactions: All transactions shall be done by using a block; for example, transfer of drugs from manufacturer to distributor.
+View Blockchain: It returns all blocks and thereby shows the flow of drugs through the supply chain.
+Validate Chain: In this function, it checks if the created blockchain is valid.
+
+Code Overview:
+Blockchain Class: Manages the chain of blocks, adding new blocks, and verifying the integrity of the chain.
+Block Class: Represents each block in the chain, containing data (e.g., drug transaction details), a timestamp, a hash, and a reference to the previous block's hash.
+Transaction Class: Manages the data structure for supply chain transactions.
+
+How to Use :
+Add Transactions: add_transaction() should be called with information such as drug, manufacturer, amount and destination.
+View Chain: The view_chain() function enables the user to view their entire supply chain history. Validate Chain: validate_chain() allows a user to validate the integrity of the blockchain.
